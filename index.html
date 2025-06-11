@@ -1,69 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FastSave - All Video Downloader</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FastSave - Video Downloader</title>
   <style>
     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
       background-color: #121212;
       color: #ffffff;
-      font-family: 'Segoe UI', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      margin: 0;
-      padding: 20px;
     }
     h1 {
-      font-size: 2em;
-      color: #1dbf73;
+      color: #00ffcc;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: none;
     }
     input {
-      padding: 10px;
-      width: 80%;
-      max-width: 400px;
-      border: none;
-      border-radius: 8px;
-      margin-top: 20px;
+      width: 300px;
     }
     button {
-      margin-top: 20px;
-      padding: 10px 30px;
-      background-color: #1dbf73;
-      border: none;
-      border-radius: 8px;
-      color: white;
-      font-size: 1em;
+      background-color: #00ffcc;
       cursor: pointer;
-    }
-    footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.8em;
-      color: #888;
     }
   </style>
 </head>
 <body>
-  <h1>FastSave - Download Any Video</h1>
-  <p>Paste any video link below (YouTube, Instagram, Facebook...)</p>
-  <input type="text" id="videoURL" placeholder="Enter video URL here">
-  <button onclick="startDownload()">Download</button>
-
-  <footer>Powered by SaveFrom | © 2025 FastSave</footer>
-
-  <script>
-    function startDownload() {
-      let link = document.getElementById("videoURL").value.trim();
-      if(link === "") {
-        alert("Please enter a video link!");
-        return;
-      }
-      window.location.href = "https://en.savefrom.net/18/?url=" + encodeURIComponent(link);
-    }
-  </script>
+  <h1>FastSave Downloader</h1>
+  <input type="text" placeholder="Paste video URL here..." />
+  <button>Download</button>
 </body>
 </html>
